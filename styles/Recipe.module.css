@@ -1,0 +1,49 @@
+.ingredients {
+  background-color: #aec5eb;
+  color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.ingredients h3 {
+  margin-top: 0;
+}
+
+.backToHome {
+  margin-top: 3rem;
+}
+.backToHome a {
+  background-color: #f9dec9;
+  color: black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.backToHome a:hover {
+  background-color: #f5c7a3;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+.subtitle {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.instructions {
+  margin-top: 2rem;
+  background-color: #e9afa3;
+  color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.instructions h3 {
+  margin-top: 0;
+}

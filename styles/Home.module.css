@@ -1,0 +1,31 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.list > li {
+  flex: 0 0 400px;
+  border-radius: 50px;
+  background: #644b40;
+
+  display: flex;
+  transition: all 0.2s;
+}
+.list > li:hover {
+  background: #4b3830;
+}
+
+.list > li > a {
+  flex: 1 1 auto;
+  padding: 1rem;
+  text-decoration: none;
+}

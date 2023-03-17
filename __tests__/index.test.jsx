@@ -6,7 +6,7 @@ describe("Home", () => {
   it("renders a heading", () => {
     render(<Home />);
 
-    const heading = screen.getByText("Recipes!!!!!!!!");
+    const heading = screen.getByText("Recipes");
 
     expect(heading).toBeInTheDocument();
   });

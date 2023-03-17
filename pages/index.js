@@ -13,7 +13,7 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.container}>
-        <h1>Recipes</h1>
+        <h1>Recipes!!!!!!!!</h1>
         <ul className={styles.list}>
           {props.recipes?.length &&
             props.recipes.map((r) => (

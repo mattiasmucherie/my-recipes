@@ -1,4 +1,4 @@
-import { getOneRecipe } from "@/utils/recipeUtils";
+import { getAllRecipes, getOneRecipe } from "@/utils/recipeUtils";
 import styles from "@/styles/Recipe.module.css";
 import Link from "next/link";
 
@@ -34,7 +34,14 @@ export default function RecipePage(props) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticPaths() {
+  return {
+    paths: getAllRecipes().map((r) => ({ params: { id: String(r.id) } })),
+    fallback: false,
+  };
+}
+
+export async function getStaticProps(context) {
   return {
     props: {
       recipe: getOneRecipe(context.params.id) || null,
